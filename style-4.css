@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Righteous&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-01: 'Righteous', 'cursive';
+    --font-family-02: 'Open Sans', sans-serif;
+
+    --color-01: #FE5D26;
+    --color-02: #e9bc7e;
+    --color-03: #f7eccd;
+    --color-04: #5a2210;
+    --color-05: rgba(255, 230, 0, 0.507);
+}
+
+body {
+    background-color: var(--color-02);
+}
+
+header {
+    background-color: var(--color-01);
+}
+
+header h1.titulo {
+    color: var(--color-03);
+    text-align: center;
+    font-family: var(--font-family-01);
+    padding-top: 20px;
+}
+
+header h2.subtitulo {
+    color: var(--color-03);
+    text-align: center;
+    font-family: var(--font-family-02);
+    margin-top: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 25px;
+}
+
+.menu-item {
+    background-color: var(--color-03);
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-04);
+    font-family: var(--font-family-01);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+}
+.menu-item:hover {
+    background-color: var(--color-02);
+    color: var(--color-01);
+    transition: 0.4s;
+}
+
+main {
+    background-color: var(--color-03);
+    max-width: 1000px;
+    margin: 0px auto;
+    height: 1005px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+}
+
+main h1.titulo {
+    text-align: center;
+    padding-top: 50px;
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+    font-size: 37px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.principal-imagem {
+    border-radius: 15px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+}
+
+.principal-texto {
+    background-color: var(--color-05);
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    border-radius: 15px;
+    padding: 0px 30px 10px 30px;
+}
+
+.principal-texto-titulo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+}
+
+.principal-texto-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: var(--font-family-02);
+}
+
+.secundario {
+    background-color: var(--color-05);
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.secundario-titulo {
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.secundario-texto {
+    font-family: var(--font-family-02);
+    text-align: justify;
+    padding: 10px;
+}
+
+.convite {
+    border-top: 1.0px solid var(--color-01); 
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.convite-titulo {
+    margin-top: 50px;
+    text-align: center;
+    font-family: var(--font-family-01);
+    font-weight: normal;
+    color: var(--color-04);
+}
+
+.convite-texto {
+    font-family: var(--font-family-02);
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-04); 
+}
+
+.convite-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.convite-links-imagem {
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.convite-links-imagem:hover {
+    box-shadow: 1px 2px 12px 10px rgba(245, 149, 5, 0.363);
+    height: 190px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: var(--color-01);
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+    font-family:var(--font-family-02);
+    color: var(--color-03); 
+}

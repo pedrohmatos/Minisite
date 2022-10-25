@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Righteous&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --font-family-01: 'Righteous', 'cursive';
+    --font-family-02: 'Open Sans', sans-serif;
+
+    --color-01: #592411;
+    --color-02: #F2D0A7;
+    --color-03: #F2B035;
+    --color-04: #F2F2F0;
+    --color-05: #ee982ed2;
+}
+
+body {
+    background-color: var(--color-02);
+}
+
+header {
+    background-color: var(--color-03);
+}
+
+.A {
+    text-align: center;
+}
+
+.A-titulo {
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.A-subtitulo {
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.A-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+.A-menu-item {
+    background-color: var(--color-04);
+    padding: 5px;
+    width: 105px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--color-01);
+    font-family: var(--font-family-01);
+    margin-bottom: 7px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+}
+.A-menu-item:hover {
+    background-color: #e7e7e0;
+    font-weight: bolder;
+}
+
+.B {
+    background-color: var(--color-04);
+    max-width: 1000px;
+    margin: 0px auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);;
+}
+
+.B-titulo {
+    text-align: center;
+    font-family: var(--font-family-01);
+    color: var(--color-01);
+    padding-top: 60px;
+    font-size: 37px;
+}
+
+.B-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.B-principal-imagem {
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+}
+
+.B-principal-texto {
+    background-color: var(--color-05);
+    padding: 7px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+    height: 150px;
+}
+
+.B-principal-texto-titulo {
+    font-family: var(--font-family-01);
+    font-weight: normal;
+    text-align: center;
+    color: var(--color-01);
+    margin-bottom: 15px;
+}
+
+.B-principal-texto-lista {
+    font-family: var(--font-family-02);
+}
+
+.C {
+    background-color: var(--color-05);
+    max-width: 830px;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);;
+}
+
+.C-titulo {
+    text-align: center;
+    margin-bottom: 17px;
+    font-family: var(--font-family-01);
+    color: var(--color-01);
+}
+
+.C-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--font-family-02);
+}
+
+.D-texto-titulo {
+    text-align: center;
+    font-family: var(--font-family-02);
+    color: var(--color-01);
+    font-weight: 600;
+    width: 360px;
+    margin: 10px auto;
+}
+
+.D-texto {
+    text-align: center;
+    font-family: var(--font-family-02);
+    margin: 20px;
+}
+
+.D-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.D-links-imagem {
+    border-radius: 10px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+    margin-top: 10px;
+}
+.D-links-imagem:hover {
+    box-shadow: 1px 2.5px 10px 10px rgba(241, 140, 9, 0.452);
+    cursor: pointer;
+}
+
+.D-links-imagem2 {
+    background-color: grey;
+    height: 150px;
+    width: 275px;
+    border-radius: 10px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+    cursor: pointer;
+}
+.D-links-imagem2:hover {
+    box-shadow: 1px 2.5px 10px 10px rgba(241, 140, 9, 0.452);
+    font-weight: bold;
+}
+
+.D-links-imagem2 > p {
+    text-align: center;
+    line-height: 9;
+    font-family: var(--font-family-02);
+}
+
+.E {
+    background-color: var(--color-03);
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font-family-02);
+    color: var(--color-01);
+}
+
+.E-texto {
+    padding: 4px;
+}

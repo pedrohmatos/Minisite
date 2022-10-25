@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Righteous&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-01: #eee1ca;
+    --color-02: #ebddb1a6;
+    --color-03: #ebd0a0;
+    --color-04: #8C5627;
+    
+    --color-destaque: white;
+
+    --color-extra: #0A4073;
+
+    --font-family-01: 'Righteous', 'cursive';
+    --font-family-02: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 1200px;
+    background-image: linear-gradient(10deg, var(--color-03), var(--color-04));
+}
+
+.cabecalho {
+    background-color: var(--color-04);
+    padding: 20px 0px 0px 30px;
+}
+
+.cabecalho-titulo {
+    text-align: center;
+    color: var(--color-destaque);
+    font-family: var(--font-family-01);
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.cabecalho-subtitulo {
+    text-align: center;
+    color: var(--color-destaque);
+    font-family: var(--font-family-01);
+    font-weight: normal;
+}
+
+.cabecalho-menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 7px;
+}
+
+.cabecalho-menu-item {
+    color: var(--color-04);
+    background-color: var(--color-03);
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+    padding: 5px;
+    width: 110px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+    font-family: var(--font-family-02);
+}
+.cabecalho-menu-item:hover {
+    background-color: var(--color-02);
+    color: var(--color-destaque);
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.principal {
+    background-color: var(--color-02);
+    max-width: 1000px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 1px 2.5px 10px rgba(0, 0, 0, 0.247);
+}
+
+.principal-titulo {
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 36px
+}
+
+.principal-secao-um {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.principal-secao-um-imagem {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+}
+
+.principal-secao-um-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    background-color: var(--color-03);    
+}
+
+.principal-secao-um-texto-titulo {
+    text-align: center;
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+}
+
+.principal-secao-um-texto-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--font-family-02);
+    font-size: 16px;
+}
+
+.principal-secao-dois {
+    background-color: var(--color-03);
+    padding: 15px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    border-radius: 15px;
+    max-width: 740px;
+    margin: 50px auto;
+}
+
+.principal-secao-dois-titulo {
+    text-align: center;
+    font-family: var(--font-family-01);
+    color: var(--color-04);
+    margin-bottom: 20px;
+}
+
+.principal-secao-dois-texto {
+    font-family: var(--font-family-02);
+    text-indent: 20px;
+}
+
+.secundario {
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.secundario-texto {
+    font-family: var(--font-family-02);
+    color: var(--color-04);
+    font-weight: 700;
+    padding-top: 20px;
+    border-top: 0.8px solid var(--color-04);
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+.secundario-texto-2 {
+    font-family: var(--font-family-02);
+}
+
+.secundario-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.secundario-links-imagem {
+    border-radius: 15px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+}
+.secundario-links-imagem:hover {
+    box-shadow: 1px 2px 7px 10px rgba(255, 255, 255, 0.548);
+}
+
+.rodape {
+    background-color: var(--color-04);
+    position: relative;
+    top: 40px;
+    text-align: center;
+    color: var(--color-destaque);
+}
